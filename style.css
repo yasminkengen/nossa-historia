@@ -82,11 +82,12 @@ html, body {
 .music-player {
   position: fixed;
   top: 20px;
-  right: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   background: white;
   border: 2px solid #fe3423;
-  border-radius: 20px;
-  padding: 8px 12px;
+  border-radius: 40px;
+  padding: 6px 14px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   z-index: 9999;
 }
@@ -99,23 +100,11 @@ html, body {
   font-size: 14px;
   cursor: pointer;
   padding: 0;
+  white-space: nowrap;
 }
 
 #play-music:hover {
   text-decoration: underline;
 }
-@media (max-width: 600px) {
-  .music-player {
-    top: auto;
-    bottom: 20px;
-    right: 50%;
-    transform: translateX(50%);
-    padding: 6px 12px;
-  }
 
-  #play-music {
-    font-size: 13px;
-    white-space: nowrap;
-  }
-}
 
