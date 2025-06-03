@@ -104,4 +104,18 @@ html, body {
 #play-music:hover {
   text-decoration: underline;
 }
+@media (max-width: 600px) {
+  .music-player {
+    top: auto;
+    bottom: 20px;
+    right: 50%;
+    transform: translateX(50%);
+    padding: 6px 12px;
+  }
+
+  #play-music {
+    font-size: 13px;
+    white-space: nowrap;
+  }
+}
 

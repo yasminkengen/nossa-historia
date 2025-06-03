@@ -121,7 +121,9 @@ const playBtn = document.getElementById('play-music');
 if (playBtn) {
   playBtn.addEventListener('click', () => {
     music.currentTime = 0;
-    music.play();
+    music.play().catch(err => {
+      alert("⚠️ Seu navegador bloqueou o áudio. Tente tocar novamente.");
+    });
   });
 }
 
